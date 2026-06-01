@@ -3,130 +3,507 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Project - Modern Web Application</title>
+    <title>Awesome Project - Enterprise Software Solutions</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">AwesomeProject</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">AwesomeProject</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#products" class="nav-link">Products</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Cloud Services</a>
+                        <a href="#">AI & Machine Learning</a>
+                        <a href="#">Business Intelligence</a>
+                        <a href="#">Development Tools</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#solutions" class="nav-link">Solutions</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resources" class="nav-link">Resources</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Documentation</a>
+                        <a href="#">API Reference</a>
+                        <a href="#">Case Studies</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item nav-cta">
+                    <a href="#" class="nav-button">Get Started</a>
+                </li>
             </ul>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Welcome to Awesome Project</h1>
-                <p class="hero-subtitle">Build something amazing with modern web technology</p>
-                <button class="cta-button" onclick="scrollToSection('features')">Explore Features</button>
+                <h1 class="hero-heading">Transform Your Business with Cloud-First Innovation</h1>
+                <p class="hero-description">Enterprise-grade solutions designed to scale with your ambitions. Built on cutting-edge technology, trusted by Fortune 500 companies.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Start Free Trial</button>
+                    <button class="btn btn-secondary">Watch Demo</button>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2>Why Choose Us?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Lightning Fast</h3>
-                    <p>Optimized performance for the best user experience</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Beautiful Design</h3>
-                    <p>Modern, responsive design that works on all devices</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Secure</h3>
-                    <p>Enterprise-grade security for your peace of mind</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Responsive</h3>
-                    <p>Perfect on desktop, tablet, and mobile devices</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Easy to Deploy</h3>
-                    <p>One-click deployment to your favorite platform</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💡</div>
-                    <h3>Innovative</h3>
-                    <p>Latest technologies and best practices</p>
-                </div>
+            <div class="hero-visual">
+                <div class="gradient-box"></div>
+                <div class="floating-card card-1">Enterprise Grade</div>
+                <div class="floating-card card-2">99.99% Uptime</div>
+                <div class="floating-card card-3">Global Scale</div>
             </div>
         </div>
     </section>
 
     <!-- Stats Section -->
-    <section class="stats">
+    <section class="stats-section">
         <div class="container">
-            <div class="stat-box">
-                <div class="stat-number">10K+</div>
-                <div class="stat-label">Users</div>
-            </div>
-            <div class="stat-box">
-                <div class="stat-number">50+</div>
-                <div class="stat-label">Projects</div>
-            </div>
-            <div class="stat-box">
-                <div class="stat-number">99.9%</div>
-                <div class="stat-label">Uptime</div>
-            </div>
-            <div class="stat-box">
-                <div class="stat-number">24/7</div>
-                <div class="stat-label">Support</div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">500M+</div>
+                    <div class="stat-label">Active Users Worldwide</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">190+</div>
+                    <div class="stat-label">Countries & Regions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99.99%</div>
+                    <div class="stat-label">Service Availability</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">$50B+</div>
+                    <div class="stat-label">Annual Revenue Impact</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Products Section -->
+    <section id="products" class="products-section">
         <div class="container">
-            <h2>About Awesome Project</h2>
-            <p>We're dedicated to building the best web experience for our users. Our team combines modern technology with beautiful design to create applications that are both powerful and easy to use.</p>
+            <div class="section-header">
+                <h2 class="section-title">Our Product Portfolio</h2>
+                <p class="section-subtitle">Comprehensive solutions for modern enterprises</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon cloud-icon">
+                        ☁️
+                    </div>
+                    <h3 class="product-name">Cloud Platform</h3>
+                    <p class="product-description">Scalable, secure, and reliable cloud infrastructure for enterprises of all sizes</p>
+                    <ul class="product-features">
+                        <li>✓ Global data centers</li>
+                        <li>✓ Auto-scaling capabilities</li>
+                        <li>✓ Advanced security</li>
+                        <li>✓ Disaster recovery</li>
+                    </ul>
+                    <a href="#" class="product-link">Learn More →</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon ai-icon">
+                        🤖
+                    </div>
+                    <h3 class="product-name">AI & Analytics</h3>
+                    <p class="product-description">Advanced machine learning and data analytics tools for business intelligence</p>
+                    <ul class="product-features">
+                        <li>✓ Predictive analytics</li>
+                        <li>✓ Real-time insights</li>
+                        <li>✓ Natural language processing</li>
+                        <li>✓ Custom ML models</li>
+                    </ul>
+                    <a href="#" class="product-link">Learn More →</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon security-icon">
+                        🔐
+                    </div>
+                    <h3 class="product-name">Security Suite</h3>
+                    <p class="product-description">Enterprise-level security and compliance solutions</p>
+                    <ul class="product-features">
+                        <li>✓ Zero-trust architecture</li>
+                        <li>✓ Threat detection</li>
+                        <li>✓ Compliance automation</li>
+                        <li>✓ Identity management</li>
+                    </ul>
+                    <a href="#" class="product-link">Learn More →</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon dev-icon">
+                        👨‍💻
+                    </div>
+                    <h3 class="product-name">Developer Suite</h3>
+                    <p class="product-description">Complete development environment for modern applications</p>
+                    <ul class="product-features">
+                        <li>✓ Integrated IDE</li>
+                        <li>✓ DevOps tools</li>
+                        <li>✓ Code collaboration</li>
+                        <li>✓ API marketplace</li>
+                    </ul>
+                    <a href="#" class="product-link">Learn More →</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon integration-icon">
+                        🔗
+                    </div>
+                    <h3 class="product-name">Integration Hub</h3>
+                    <p class="product-description">Seamless integration with enterprise systems and third-party applications</p>
+                    <ul class="product-features">
+                        <li>✓ Pre-built connectors</li>
+                        <li>✓ API management</li>
+                        <li>✓ Middleware solutions</li>
+                        <li>✓ Data sync tools</li>
+                    </ul>
+                    <a href="#" class="product-link">Learn More →</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon support-icon">
+                        🎯
+                    </div>
+                    <h3 class="product-name">Enterprise Support</h3>
+                    <p class="product-description">24/7 dedicated support and consulting services</p>
+                    <ul class="product-features">
+                        <li>✓ 24/7 support</li>
+                        <li>✓ Dedicated account manager</li>
+                        <li>✓ Expert consulting</li>
+                        <li>✓ Custom training</li>
+                    </ul>
+                    <a href="#" class="product-link">Learn More →</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions-section">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
+            <div class="section-header">
+                <h2 class="section-title">Industry Solutions</h2>
+                <p class="section-subtitle">Purpose-built solutions for your industry</p>
+            </div>
+            
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-image finance-industry"></div>
+                    <div class="solution-content">
+                        <h3>Financial Services</h3>
+                        <p>Secure, compliant solutions for banking, insurance, and fintech</p>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Your Email" required>
+                
+                <div class="solution-card">
+                    <div class="solution-image healthcare-industry"></div>
+                    <div class="solution-content">
+                        <h3>Healthcare</h3>
+                        <p>HIPAA-compliant platforms for patient data and care management</p>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                
+                <div class="solution-card">
+                    <div class="solution-image retail-industry"></div>
+                    <div class="solution-content">
+                        <h3>Retail & Commerce</h3>
+                        <p>Omnichannel solutions for seamless customer experiences</p>
+                    </div>
                 </div>
-                <button type="submit" class="submit-button">Send Message</button>
-            </form>
+                
+                <div class="solution-card">
+                    <div class="solution-image manufacturing-industry"></div>
+                    <div class="solution-content">
+                        <h3>Manufacturing</h3>
+                        <p>IoT and automation solutions for Industry 4.0 transformation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">Enterprise excellence in every aspect</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <h3>Global Infrastructure</h3>
+                    <p>Distributed globally with data centers on every continent, ensuring low latency and compliance with local regulations</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <h3>Enterprise Security</h3>
+                    <p>Industry-leading security certifications including ISO 27001, SOC 2, and GDPR compliance</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <h3>AI-Powered Intelligence</h3>
+                    <p>Advanced machine learning algorithms that continuously optimize your operations and predict outcomes</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <h3>Seamless Integration</h3>
+                    <p>Connect with your existing enterprise systems through hundreds of pre-built connectors and APIs</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-number">05</div>
+                    <h3>Expert Support</h3>
+                    <p>Dedicated support team of certified professionals available 24/7/365 across multiple time zones</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-number">06</div>
+                    <h3>Innovation First</h3>
+                    <p>Continuous R&D investment with monthly feature releases and quarterly major updates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trusted by Industry Leaders</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"This platform transformed how we operate. We reduced infrastructure costs by 40% and improved performance by 3x."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div>
+                            <div class="author-name">John Davidson</div>
+                            <div class="author-title">CTO, Global Tech Corp</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"The security and compliance features are unmatched. Our audit process is now completely automated and efficient."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SR</div>
+                        <div>
+                            <div class="author-name">Sarah Rodriguez</div>
+                            <div class="author-title">Chief Security Officer, Finance Inc</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Outstanding platform and even more outstanding support team. They helped us scale from 100k to 10M users seamlessly."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div>
+                            <div class="author-name">Marcus Kim</div>
+                            <div class="author-title">CEO, StartupScale</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"The AI analytics capabilities are game-changing. We now have insights that drive real business impact and revenue growth."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EM</div>
+                        <div>
+                            <div class="author-name">Emma Martinez</div>
+                            <div class="author-title">VP Analytics, Enterprise Solutions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Flexible Pricing Plans</h2>
+                <p class="section-subtitle">Choose the plan that fits your needs</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-name">Starter</div>
+                    <div class="pricing-price"><span class="currency">$</span><span class="amount">99</span><span class="period">/month</span></div>
+                    <p class="pricing-description">Perfect for small teams and startups</p>
+                    <ul class="pricing-features">
+                        <li>✓ Up to 5 users</li>
+                        <li>✓ 10GB storage</li>
+                        <li>✓ Basic support</li>
+                        <li>✓ API access</li>
+                        <li>✗ Advanced analytics</li>
+                    </ul>
+                    <button class="btn btn-outline">Get Started</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">POPULAR</div>
+                    <div class="pricing-name">Professional</div>
+                    <div class="pricing-price"><span class="currency">$</span><span class="amount">499</span><span class="period">/month</span></div>
+                    <p class="pricing-description">For growing businesses and teams</p>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited users</li>
+                        <li>✓ 1TB storage</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Advanced API</li>
+                        <li>✓ Analytics & reporting</li>
+                    </ul>
+                    <button class="btn btn-primary">Start Free Trial</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-name">Enterprise</div>
+                    <div class="pricing-price">Custom</div>
+                    <p class="pricing-description">For large organizations with custom needs</p>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited everything</li>
+                        <li>✓ Dedicated infrastructure</li>
+                        <li>✓ 24/7 premium support</li>
+                        <li>✓ Custom integration</li>
+                        <li>✓ SLA guarantee</li>
+                    </ul>
+                    <button class="btn btn-outline">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Resources Section -->
+    <section id="resources" class="resources-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Resources & Articles</h2>
+                <p class="section-subtitle">Learn from industry experts and best practices</p>
+            </div>
+            
+            <div class="resources-grid">
+                <article class="resource-card">
+                    <div class="resource-tag">WHITEPAPER</div>
+                    <h3>Digital Transformation in 2026</h3>
+                    <p>A comprehensive guide to modernizing your enterprise infrastructure and operations</p>
+                    <a href="#" class="resource-link">Download PDF →</a>
+                </article>
+                
+                <article class="resource-card">
+                    <div class="resource-tag">CASE STUDY</div>
+                    <h3>How Fortune 500 Scales to Billions</h3>
+                    <p>Real-world examples of enterprises achieving 10x growth with cloud-native architecture</p>
+                    <a href="#" class="resource-link">Read Case Study →</a>
+                </article>
+                
+                <article class="resource-card">
+                    <div class="resource-tag">WEBINAR</div>
+                    <h3>AI-Powered Business Intelligence</h3>
+                    <p>Join our experts for an in-depth look at leveraging AI for competitive advantage</p>
+                    <a href="#" class="resource-link">Register Now →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Transform Your Enterprise?</h2>
+                <p class="cta-description">Join thousands of companies already using our platform to drive innovation and growth</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary-lg">Start Your Free Trial</button>
+                    <button class="btn btn-secondary-lg">Schedule a Demo</button>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Awesome Project. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#">Twitter</a>
-                <a href="#">GitHub</a>
-                <a href="#">LinkedIn</a>
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Cloud Platform</a></li>
+                        <li><a href="#">AI & Analytics</a></li>
+                        <li><a href="#">Security Suite</a></li>
+                        <li><a href="#">Developer Suite</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Mid-Market</a></li>
+                        <li><a href="#">Startups</a></li>
+                        <li><a href="#">Government</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Awesome Project. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Security</a>
+                    <a href="#">Compliance</a>
+                </div>
             </div>
         </div>
     </footer>
