@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Project - Enterprise Software Solutions</title>
+    <title>Awesome Project - Enterprise Cloud Solutions</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -52,15 +52,23 @@
         </div>
     </nav>
 
-    <!-- Hero Banner -->
+    <!-- Hero Banner with Video Background -->
     <section class="hero-banner">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc28yaXYxMDAvbXA0MWMpIGdvb2dsZSBodHRwczovL2dvb2dsZS5jb20vAAtm" type="video/mp4">
+                <div class="hero-video-fallback"></div>
+            </video>
+            <div class="hero-video-overlay"></div>
+        </div>
+        
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-heading">Transform Your Business with Cloud-First Innovation</h1>
                 <p class="hero-description">Enterprise-grade solutions designed to scale with your ambitions. Built on cutting-edge technology, trusted by Fortune 500 companies.</p>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary">Start Free Trial</button>
-                    <button class="btn btn-secondary">Watch Demo</button>
+                    <button class="btn btn-primary animated-btn">Start Free Trial</button>
+                    <button class="btn btn-secondary animated-btn" onclick="playDemoVideo()">Watch Demo</button>
                 </div>
             </div>
             <div class="hero-visual">
@@ -72,16 +80,27 @@
         </div>
     </section>
 
+    <!-- Demo Video Modal -->
+    <div id="demoModal" class="video-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeDemoVideo()">&times;</span>
+            <video controls class="demo-video" width="100%">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
     <!-- Stats Section -->
     <section class="stats-section">
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-item">
-                    <div class="stat-number">500M+</div>
-                    <div class="stat-label">Active Users Worldwide</div>
+                    <div class="stat-number counter" data-target="500">0</div>
+                    <div class="stat-label">M+ Active Users Worldwide</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">190+</div>
+                    <div class="stat-number counter" data-target="190">0</div>
                     <div class="stat-label">Countries & Regions</div>
                 </div>
                 <div class="stat-item">
@@ -89,8 +108,8 @@
                     <div class="stat-label">Service Availability</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">$50B+</div>
-                    <div class="stat-label">Annual Revenue Impact</div>
+                    <div class="stat-number counter" data-target="50">0</div>
+                    <div class="stat-label">B+ Annual Revenue Impact</div>
                 </div>
             </div>
         </div>
@@ -105,10 +124,8 @@
             </div>
             
             <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-icon cloud-icon">
-                        ☁️
-                    </div>
+                <div class="product-card hover-lift">
+                    <div class="product-icon cloud-icon">☁️</div>
                     <h3 class="product-name">Cloud Platform</h3>
                     <p class="product-description">Scalable, secure, and reliable cloud infrastructure for enterprises of all sizes</p>
                     <ul class="product-features">
@@ -120,10 +137,8 @@
                     <a href="#" class="product-link">Learn More →</a>
                 </div>
 
-                <div class="product-card">
-                    <div class="product-icon ai-icon">
-                        🤖
-                    </div>
+                <div class="product-card hover-lift">
+                    <div class="product-icon ai-icon">🤖</div>
                     <h3 class="product-name">AI & Analytics</h3>
                     <p class="product-description">Advanced machine learning and data analytics tools for business intelligence</p>
                     <ul class="product-features">
@@ -135,10 +150,8 @@
                     <a href="#" class="product-link">Learn More →</a>
                 </div>
 
-                <div class="product-card">
-                    <div class="product-icon security-icon">
-                        🔐
-                    </div>
+                <div class="product-card hover-lift">
+                    <div class="product-icon security-icon">🔐</div>
                     <h3 class="product-name">Security Suite</h3>
                     <p class="product-description">Enterprise-level security and compliance solutions</p>
                     <ul class="product-features">
@@ -150,10 +163,8 @@
                     <a href="#" class="product-link">Learn More →</a>
                 </div>
 
-                <div class="product-card">
-                    <div class="product-icon dev-icon">
-                        👨‍💻
-                    </div>
+                <div class="product-card hover-lift">
+                    <div class="product-icon dev-icon">👨‍💻</div>
                     <h3 class="product-name">Developer Suite</h3>
                     <p class="product-description">Complete development environment for modern applications</p>
                     <ul class="product-features">
@@ -165,10 +176,8 @@
                     <a href="#" class="product-link">Learn More →</a>
                 </div>
 
-                <div class="product-card">
-                    <div class="product-icon integration-icon">
-                        🔗
-                    </div>
+                <div class="product-card hover-lift">
+                    <div class="product-icon integration-icon">🔗</div>
                     <h3 class="product-name">Integration Hub</h3>
                     <p class="product-description">Seamless integration with enterprise systems and third-party applications</p>
                     <ul class="product-features">
@@ -180,10 +189,8 @@
                     <a href="#" class="product-link">Learn More →</a>
                 </div>
 
-                <div class="product-card">
-                    <div class="product-icon support-icon">
-                        🎯
-                    </div>
+                <div class="product-card hover-lift">
+                    <div class="product-icon support-icon">🎧</div>
                     <h3 class="product-name">Enterprise Support</h3>
                     <p class="product-description">24/7 dedicated support and consulting services</p>
                     <ul class="product-features">
@@ -198,8 +205,11 @@
         </div>
     </section>
 
-    <!-- Solutions Section -->
+    <!-- Solutions Section with Background Video -->
     <section id="solutions" class="solutions-section">
+        <div class="solutions-bg-video">
+            <div class="solutions-bg-overlay"></div>
+        </div>
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Industry Solutions</h2>
@@ -207,7 +217,7 @@
             </div>
             
             <div class="solutions-grid">
-                <div class="solution-card">
+                <div class="solution-card hover-lift">
                     <div class="solution-image finance-industry"></div>
                     <div class="solution-content">
                         <h3>Financial Services</h3>
@@ -215,7 +225,7 @@
                     </div>
                 </div>
                 
-                <div class="solution-card">
+                <div class="solution-card hover-lift">
                     <div class="solution-image healthcare-industry"></div>
                     <div class="solution-content">
                         <h3>Healthcare</h3>
@@ -223,7 +233,7 @@
                     </div>
                 </div>
                 
-                <div class="solution-card">
+                <div class="solution-card hover-lift">
                     <div class="solution-image retail-industry"></div>
                     <div class="solution-content">
                         <h3>Retail & Commerce</h3>
@@ -231,7 +241,7 @@
                     </div>
                 </div>
                 
-                <div class="solution-card">
+                <div class="solution-card hover-lift">
                     <div class="solution-image manufacturing-industry"></div>
                     <div class="solution-content">
                         <h3>Manufacturing</h3>
@@ -251,37 +261,37 @@
             </div>
             
             <div class="features-grid">
-                <div class="feature-item">
+                <div class="feature-item pulse-animation">
                     <div class="feature-number">01</div>
                     <h3>Global Infrastructure</h3>
                     <p>Distributed globally with data centers on every continent, ensuring low latency and compliance with local regulations</p>
                 </div>
                 
-                <div class="feature-item">
+                <div class="feature-item pulse-animation">
                     <div class="feature-number">02</div>
                     <h3>Enterprise Security</h3>
                     <p>Industry-leading security certifications including ISO 27001, SOC 2, and GDPR compliance</p>
                 </div>
                 
-                <div class="feature-item">
+                <div class="feature-item pulse-animation">
                     <div class="feature-number">03</div>
                     <h3>AI-Powered Intelligence</h3>
                     <p>Advanced machine learning algorithms that continuously optimize your operations and predict outcomes</p>
                 </div>
                 
-                <div class="feature-item">
+                <div class="feature-item pulse-animation">
                     <div class="feature-number">04</div>
                     <h3>Seamless Integration</h3>
                     <p>Connect with your existing enterprise systems through hundreds of pre-built connectors and APIs</p>
                 </div>
                 
-                <div class="feature-item">
+                <div class="feature-item pulse-animation">
                     <div class="feature-number">05</div>
                     <h3>Expert Support</h3>
                     <p>Dedicated support team of certified professionals available 24/7/365 across multiple time zones</p>
                 </div>
                 
-                <div class="feature-item">
+                <div class="feature-item pulse-animation">
                     <div class="feature-number">06</div>
                     <h3>Innovation First</h3>
                     <p>Continuous R&D investment with monthly feature releases and quarterly major updates</p>
@@ -297,8 +307,8 @@
                 <h2 class="section-title">Trusted by Industry Leaders</h2>
             </div>
             
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
+            <div class="testimonials-carousel">
+                <div class="testimonial-card slide-in">
                     <div class="testimonial-rating">★★★★★</div>
                     <p class="testimonial-text">"This platform transformed how we operate. We reduced infrastructure costs by 40% and improved performance by 3x."</p>
                     <div class="testimonial-author">
@@ -310,7 +320,7 @@
                     </div>
                 </div>
                 
-                <div class="testimonial-card">
+                <div class="testimonial-card slide-in">
                     <div class="testimonial-rating">★★★★★</div>
                     <p class="testimonial-text">"The security and compliance features are unmatched. Our audit process is now completely automated and efficient."</p>
                     <div class="testimonial-author">
@@ -322,7 +332,7 @@
                     </div>
                 </div>
                 
-                <div class="testimonial-card">
+                <div class="testimonial-card slide-in">
                     <div class="testimonial-rating">★★★★★</div>
                     <p class="testimonial-text">"Outstanding platform and even more outstanding support team. They helped us scale from 100k to 10M users seamlessly."</p>
                     <div class="testimonial-author">
@@ -334,7 +344,7 @@
                     </div>
                 </div>
                 
-                <div class="testimonial-card">
+                <div class="testimonial-card slide-in">
                     <div class="testimonial-rating">★★★★★</div>
                     <p class="testimonial-text">"The AI analytics capabilities are game-changing. We now have insights that drive real business impact and revenue growth."</p>
                     <div class="testimonial-author">
@@ -358,7 +368,7 @@
             </div>
             
             <div class="pricing-grid">
-                <div class="pricing-card">
+                <div class="pricing-card hover-lift">
                     <div class="pricing-name">Starter</div>
                     <div class="pricing-price"><span class="currency">$</span><span class="amount">99</span><span class="period">/month</span></div>
                     <p class="pricing-description">Perfect for small teams and startups</p>
@@ -372,7 +382,7 @@
                     <button class="btn btn-outline">Get Started</button>
                 </div>
                 
-                <div class="pricing-card featured">
+                <div class="pricing-card featured hover-lift">
                     <div class="pricing-badge">POPULAR</div>
                     <div class="pricing-name">Professional</div>
                     <div class="pricing-price"><span class="currency">$</span><span class="amount">499</span><span class="period">/month</span></div>
@@ -387,7 +397,7 @@
                     <button class="btn btn-primary">Start Free Trial</button>
                 </div>
                 
-                <div class="pricing-card">
+                <div class="pricing-card hover-lift">
                     <div class="pricing-name">Enterprise</div>
                     <div class="pricing-price">Custom</div>
                     <p class="pricing-description">For large organizations with custom needs</p>
@@ -413,21 +423,21 @@
             </div>
             
             <div class="resources-grid">
-                <article class="resource-card">
+                <article class="resource-card hover-lift">
                     <div class="resource-tag">WHITEPAPER</div>
                     <h3>Digital Transformation in 2026</h3>
                     <p>A comprehensive guide to modernizing your enterprise infrastructure and operations</p>
                     <a href="#" class="resource-link">Download PDF →</a>
                 </article>
                 
-                <article class="resource-card">
+                <article class="resource-card hover-lift">
                     <div class="resource-tag">CASE STUDY</div>
                     <h3>How Fortune 500 Scales to Billions</h3>
                     <p>Real-world examples of enterprises achieving 10x growth with cloud-native architecture</p>
                     <a href="#" class="resource-link">Read Case Study →</a>
                 </article>
                 
-                <article class="resource-card">
+                <article class="resource-card hover-lift">
                     <div class="resource-tag">WEBINAR</div>
                     <h3>AI-Powered Business Intelligence</h3>
                     <p>Join our experts for an in-depth look at leveraging AI for competitive advantage</p>
@@ -437,15 +447,15 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- CTA Section with Parallax -->
+    <section class="cta-section parallax">
         <div class="container">
             <div class="cta-content">
                 <h2 class="cta-title">Ready to Transform Your Enterprise?</h2>
                 <p class="cta-description">Join thousands of companies already using our platform to drive innovation and growth</p>
                 <div class="cta-buttons">
-                    <button class="btn btn-primary-lg">Start Your Free Trial</button>
-                    <button class="btn btn-secondary-lg">Schedule a Demo</button>
+                    <button class="btn btn-primary-lg animated-btn">Start Your Free Trial</button>
+                    <button class="btn btn-secondary-lg animated-btn">Schedule a Demo</button>
                 </div>
             </div>
         </div>
