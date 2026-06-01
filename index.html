@@ -3,99 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Project - Modern Web App</title>
+    <title>Awesome Project - Modern Web Application</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="logo">✨ AwesomeApp</div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">AwesomeProject</div>
             <ul class="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#features" class="nav-link">Features</a></li>
-                <li><a href="#showcase" class="nav-link">Showcase</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- Hero Section -->
-        <section id="home" class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Welcome to Awesome Project</h1>
-                <p class="hero-subtitle">Experience the power of modern web design and seamless functionality</p>
+                <p class="hero-subtitle">Build something amazing with modern web technology</p>
                 <button class="cta-button" onclick="scrollToSection('features')">Explore Features</button>
             </div>
-            <div class="hero-animation">
-                <div class="floating-box"></div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Features Section -->
-        <section id="features" class="features">
-            <h2>Amazing Features</h2>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">⚡</div>
                     <h3>Lightning Fast</h3>
-                    <p>Optimized performance for instant loading and smooth interactions</p>
+                    <p>Optimized performance for the best user experience</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎨</div>
                     <h3>Beautiful Design</h3>
-                    <p>Modern, responsive design that looks great on all devices</p>
+                    <p>Modern, responsive design that works on all devices</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
-                    <h3>Secure & Reliable</h3>
-                    <p>Built with security best practices and rock-solid reliability</p>
+                    <h3>Secure</h3>
+                    <p>Enterprise-grade security for your peace of mind</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Responsive</h3>
+                    <p>Perfect on desktop, tablet, and mobile devices</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🚀</div>
-                    <h3>Scalable</h3>
-                    <p>Designed to grow with your needs and handle any scale</p>
+                    <h3>Easy to Deploy</h3>
+                    <p>One-click deployment to your favorite platform</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>Innovative</h3>
+                    <p>Latest technologies and best practices</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Interactive Showcase -->
-        <section id="showcase" class="showcase">
-            <h2>Interactive Showcase</h2>
-            <div class="showcase-container">
-                <div class="demo-box">
-                    <input type="text" id="demoInput" class="demo-input" placeholder="Type something awesome...">
-                    <button class="demo-button" onclick="handleDemo()">Create Magic ✨</button>
-                    <div id="demoOutput" class="demo-output"></div>
-                </div>
-                <div class="stats">
-                    <div class="stat-item">
-                        <div class="stat-number" id="counter">0</div>
-                        <div class="stat-label">Awesome Clicks</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Satisfaction</div>
-                    </div>
-                </div>
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-box">
+                <div class="stat-number">10K+</div>
+                <div class="stat-label">Users</div>
             </div>
-        </section>
+            <div class="stat-box">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">99.9%</div>
+                <div class="stat-label">Uptime</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Support</div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Awesome Project</h2>
+            <p>We're dedicated to building the best web experience for our users. Our team combines modern technology with beautiful design to create applications that are both powerful and easy to use.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
             <h2>Get In Touch</h2>
-            <form class="contact-form" onsubmit="handleSubmit(event)">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="submit-btn">Send Message</button>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
             </form>
-        </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>&copy; 2026 Awesome Project. Built with ❤️ and JavaScript</p>
-        </footer>
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Awesome Project. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
